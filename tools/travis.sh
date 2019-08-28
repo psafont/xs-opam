@@ -4,7 +4,7 @@
 # repository.
 # 
 
-set -e
+set -xe
 
 IMG='ocaml/opam2:debian-unstable'
 
