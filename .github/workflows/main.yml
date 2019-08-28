@@ -7,11 +7,12 @@ jobs:
     runs-on: ubuntu-18.04
     strategy:
       matrix:
-        OPAMWITHTEST: [true, false]
-        RECURSIVE: ["", --recursive]
-        exclude:
-          - OPAMWITHTEST: false
-            RECURSIVE: ""
+        env: [OPAMWITHTEST: false,
+              OPAMWITHTEST: true,
+              { OPAMWITHTEST: true,
+                RECURSIVE: --recursive
+              }
+             ]
     steps:
       - name: Checkout
         uses: actions/checkout@v1
