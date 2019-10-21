@@ -1,6 +1,6 @@
 # Opam Repository for XenServer
 
-changes
+changes and fixup
 
 [![Build Status](https://travis-ci.org/xapi-project/xs-opam.svg?branch=opam2)](https://travis-ci.org/xapi-project/xs-opam)
 
