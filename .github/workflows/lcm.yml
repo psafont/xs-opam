@@ -2,10 +2,16 @@ name: Build and test (Stockholm)
 
 on:
   push:
-    branches: [ 'release/stockholm/lcm' ]
-    tags: [ '*' ]
+    branches:
+      - 'release/stockholm/lcm'
+    tags:
+      - '*'
   pull_request:
-    branches: [ 'release/stockholm/lcm' ]
+    branches:
+      - 'release/stockholm/lcm'
+  schedule:
+    # run daily
+    - cron: '50 10 * * *'
 jobs:
   build:
     runs-on: ubuntu-20.04
