@@ -23,7 +23,7 @@ jobs:
         run: tools/license-check.sh
 
       - name: Use ocaml
-        uses: ocaml/setup-ocaml@v2
+        uses: psafont/setup-ocaml@local-urls
         with:
           ocaml-compiler: "4.08.1"
           opam-repositories: |
