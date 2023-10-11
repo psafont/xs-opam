@@ -24,6 +24,7 @@ depends: [
   "rpclib"
   "sexplib"
   "stdext"
+  "stunnel"
   "base-threads"
   "uri"
   "uuidm"
