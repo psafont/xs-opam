@@ -36,5 +36,5 @@ description: """
 The switch stores messages in queues with well-known names. Clients use
 a simple HTTP protocol to enqueue and dequeue messages."""
 url {
-  src: "https://github.com/xapi-project/xen-api/archive/master.tar.gz"
+  src: "https://github.com/psafont/xen-api/archive/no-async.tar.gz"
 }
