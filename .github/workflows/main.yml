@@ -3,9 +3,6 @@ name: Build and test
 on:
   push:
   pull_request:
-  schedule:
-    # run daily, for initializing the cache if not generated yet.
-    - cron: '41 3 * * *'
 
 jobs:
   build:
