@@ -8,7 +8,6 @@ bug-reports: "https://github.com/xapi-project/xen-api.git"
 dev-repo: "git+https://github.com/xapi-project/xen-api.git"
 build: [[ "dune" "build" "-p" name "-j" jobs ]]
 
-available: [ os = "linux" ]
 depends: [
   "ocaml"
   "dune" {>= "3.15"}

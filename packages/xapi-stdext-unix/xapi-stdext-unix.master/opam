@@ -42,7 +42,6 @@ build: [
 ]
 dev-repo: "git+https://github.com/xapi-project/xen-api.git"
 depexts: ["linux-headers"] {os-distribution = "alpine"}
-available: [ os = "linux" ]
 url {
   src: "https://github.com/xapi-project/xen-api/archive/master.tar.gz"
 }
