@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "conf-gmp"
-version: "4"
+version: "5"
 synopsis: "Virtual package relying on a GMP lib system installation"
 description:
   "This package can only install if the GMP lib is installed on the system."
@@ -10,6 +10,7 @@ license: "GPL-1.0-or-later"
 homepage: "http://gmplib.org/"
 bug-reports: "https://github.com/ocaml/opam-repository/issues"
 depends: [
+  "conf-pkg-config" {os = "macos"}
   (("host-arch-x86_32" {os = "win32" & os-distribution != "cygwinports"} &
     "conf-mingw-w64-gmp-i686"
       {os = "win32" & os-distribution != "cygwinports"}) |
@@ -19,18 +20,16 @@ depends: [
 ]
 flags: conf
 build: [
-  ["sh" "-exc" "cc -c $CFLAGS -I/usr/local/include test.c"]
-    {os != "macos" & os != "win32"}
+  [
+    "sh"
+    "-c"
+    "pkg-config --print-errors --exists gmp || cc -c $CFLAGS -I/usr/local/include test.c"
+  ] {os != "win32"}
   [
     "sh"
     "-exc"
     "$(ocamlc -config-var c_compiler) -c $CFLAGS -I/usr/local/include test.c"
   ] {os = "win32" & os-distribution = "cygwinports"}
-  [
-    "sh"
-    "-exc"
-    "cc -c $CFLAGS -I/opt/homebrew/include -I/opt/local/include -I/usr/local/include test.c"
-  ] {os = "macos"}
   [
     "sh"
     "-exc"
@@ -43,14 +42,16 @@ depexts: [
   ["gmp"] {os = "macos" & os-distribution = "homebrew"}
   ["gmp"] {os-distribution = "macports" & os = "macos"}
   ["gmp" "gmp-devel"] {os-distribution = "centos"}
-  ["gmp" "gmp-devel"] {os-distribution = "fedora" | os-family = "fedora"}
+  ["gmp" "gmp-devel"] {os-family = "fedora" | os-family = "fedora"}
   ["gmp" "gmp-devel"] {os-distribution = "ol"}
   ["gmp"] {os = "openbsd"}
   ["gmp"] {os = "freebsd"}
+  ["gmp"] {os-distribution = "arch"}
   ["gmp-dev"] {os-distribution = "alpine"}
   ["gmp-devel"] {os-family = "suse" | os-family = "opensuse"}
   ["gmp"] {os = "win32" & os-distribution = "cygwinports"}
   ["gmp"] {os-distribution = "nixos"}
+  ["libgmp-devel"] {os-family = "altlinux"}
 ]
 extra-source "test.c" {
   src:
