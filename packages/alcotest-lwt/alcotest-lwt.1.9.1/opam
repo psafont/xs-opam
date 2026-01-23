@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "alcotest-lwt"
-version: "1.9.0"
+version: "1.9.1"
 synopsis: "Lwt-based helpers for Alcotest"
 description: "Lwt-based helpers for Alcotest"
 maintainer: "thomas@gazagnaire.org"
@@ -37,11 +37,11 @@ build: [
 dev-repo: "git+https://github.com/mirage/alcotest.git"
 url {
   src:
-    "https://github.com/mirage/alcotest/releases/download/1.9.0/alcotest-1.9.0.tbz"
+    "https://github.com/mirage/alcotest/releases/download/1.9.1/alcotest-1.9.1.tbz"
   checksum: [
-    "sha256=e2387136ca854df2b4152139dd4d4b3953a646e804948073dedfe0a232f08a15"
-    "sha512=ba38fe4a9061b001d274e5d41fb06c10c84120570fc00dc57dc5a06ba05176c2413295680d839f465ba91469ea99d7e172a324e26f005d6e8c4d98fca7657241"
+    "sha256=1e29c3b41d4329062105b723dfda3aff86b8cef5e7c7500d0e491fc5fd78e482"
+    "sha512=c49d402fa636dcf11f81917610dd1d2eca8606c8919aede4db23710d071f6046a8f93c78de9fbfee26637a53ca67f71fad500bfa2478b7f0f059608a492dd0a5"
   ]
 }
-x-commit-hash: "263a4245071f6dad243a3d72d9dd875b2bd267a0"
+x-commit-hash: "7db64e91b159ce60937d2ff647208eb25fe37610"
 x-maintenance-intent: ["(latest)"]
