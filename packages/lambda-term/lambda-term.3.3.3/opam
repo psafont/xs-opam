@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "lambda-term"
-version: "3.3.2"
+version: "3.3.3"
 synopsis: "Terminal manipulation library for OCaml"
 description: """\
 Lambda-term is a cross-platform library for manipulating the terminal. It
@@ -19,7 +19,7 @@ depends: [
   "dune" {>= "3.0"}
   "ocaml" {>= "4.08.0"}
   "logs"
-  "lwt" {>= "4.2.0" & < "6~"}
+  "lwt" {>= "4.2.0"}
   "lwt_react"
   "mew_vi" {>= "0.5.0" & < "0.6.0"}
   "react"
@@ -43,8 +43,8 @@ build: [
 dev-repo: "git+https://github.com/ocaml-community/lambda-term.git"
 url {
   src:
-    "https://github.com/ocaml-community/lambda-term/archive/refs/tags/3.3.2.tar.gz"
+    "https://github.com/ocaml-community/lambda-term/archive/refs/tags/3.3.3.tar.gz"
   checksum:
-    "sha512=78648768644058337e22c79cf1fbb1a36472b24f11b1dc0461fc38419be6ec01b02d8d0ac45fed0bc99f91ba4c0f19d3bda113e834e064bee973b734527b9766"
+    "sha512=34be68128d82b7219a963ca7442948842fc26ff9dbd3be9eb76092be3a4cf7cb19bad043fdeed7f5607178375c472dc51c6eebea82145541836e7883320d342c"
 }
-x-commit-hash: "cade31f3c56f1e52fa6d297ddb78f37d09062761"
+x-commit-hash: "7dd817a3048e0d6402b3932a254e325a10f8abff"
