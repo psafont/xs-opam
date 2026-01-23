@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "conf-libev"
-version: "4-12"
+version: "4-13"
 synopsis: "High-performance event loop/event model with lots of features"
 description: """\
 Libev is modelled (very loosely) after libevent and the Event perl
@@ -30,6 +30,7 @@ depexts: [
   ["libev-devel"] {os-family = "suse" | os-family = "opensuse"}
   ["libev"] {os = "freebsd"}
   ["libev"] {os = "openbsd"}
+  ["libev"] {os = "netbsd"}
   ["libev"] {os-distribution = "nixos"}
 ]
 extra-source "build.sh" {
@@ -42,9 +43,9 @@ extra-source "build.sh" {
 }
 extra-source "discover.ml" {
   src:
-    "https://raw.githubusercontent.com/ocaml/opam-source-archives/main/patches/conf-libev/discover.ml.4-12"
+    "https://raw.githubusercontent.com/ocaml/opam-source-archives/main/patches/conf-libev/discover.ml.4-13"
   checksum: [
-    "sha256=1db79a9fa1c8642c9466d129a0077199b1e2ed4663e3659545ba8a9e287f8742"
-    "md5=a734be402679b0ccf7c8aa60fc18bf9a"
+    "sha256=569e94c09c4722989c3acb0f6b709a5dd6218f79175268c7f40f4bd26abd4fc2"
+    "md5=0c92517ce8da8366129ee2fff4035951"
   ]
 }
