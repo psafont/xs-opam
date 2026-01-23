@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "ctypes"
-version: "0.23.0"
+version: "0.24.0"
 synopsis: "Combinators for binding to C libraries without writing any C"
 description: """\
 ctypes is a library for binding to C libraries using pure OCaml. The primary
@@ -26,11 +26,10 @@ homepage: "https://github.com/yallop/ocaml-ctypes"
 doc: "https://yallop.github.io/ocaml-ctypes/"
 bug-reports: "https://github.com/yallop/ocaml-ctypes/issues"
 depends: [
-  "dune" {>= "2.9"}
-  "ocaml" {>= "4.03.0"}
+  "dune" {>= "3.9"}
+  "ocaml" {>= "4.07.0"}
   "integers"
   "dune-configurator"
-  "bigarray-compat"
   "ounit2" {with-test}
   "conf-fts" {with-test & os != "win32"}
   "conf-pkg-config" {with-test}
@@ -56,10 +55,10 @@ build: [
 dev-repo: "git+https://github.com/yallop/ocaml-ctypes.git"
 url {
   src:
-    "https://github.com/yallop/ocaml-ctypes/archive/refs/tags/0.23.0.tar.gz"
+    "https://github.com/yallop/ocaml-ctypes/archive/refs/tags/0.24.0.tar.gz"
   checksum: [
-    "sha256=cae47d815b27dd4c824a007f1145856044542fe2588d23a443ef4eefec360bf1"
-    "md5=b1af973ec9cf7867a63714e92df82f2a"
+    "sha256=249c5604c8554659761a7282db4ad200aa8c0fdc408cdb53102bd70feeb51955"
+    "md5=064316aaf508a9db203f114bb8401dee"
   ]
 }
 x-maintenance-intent: ["(any).(any).(latest)"]
