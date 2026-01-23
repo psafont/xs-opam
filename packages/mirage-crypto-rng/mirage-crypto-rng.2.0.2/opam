@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "mirage-crypto-rng"
-version: "2.0.1"
+version: "2.0.2"
 synopsis: "A cryptographically secure PRNG"
 description: """\
 Mirage-crypto-rng provides a random number generator interface, and
@@ -37,11 +37,11 @@ build: [
 dev-repo: "git+https://github.com/mirage/mirage-crypto.git"
 url {
   src:
-    "https://github.com/mirage/mirage-crypto/releases/download/v2.0.1/mirage-crypto-2.0.1.tbz"
+    "https://github.com/mirage/mirage-crypto/releases/download/v2.0.2/mirage-crypto-2.0.2.tbz"
   checksum: [
-    "sha256=5430ce3c3e40627d2d67a8decf565a1f612d39bdb33f9b767c3bdb601ff5a196"
-    "sha512=de029e01cbb8d49f9b8fbcd02ef4777435927118c9ce7a859a8193fdbec30d1a7b3a2964ee8ec722f5fa74fec1bfdc054dcdc97ad1db6e2ced359d6c010c043a"
+    "sha256=739a9d39f34027fbc93557f87c5cac4190a52bddadff72f212faa803d6215874"
+    "sha512=6b72c77026d91d3a8695012f229c54f8131c873955c1ac2177a5f4b26b38d6ff71627fdc264530556830d38e098fe8d9a8fc1504659b75a18c2bf565bb4d896f"
   ]
 }
-x-commit-hash: "451538dd395958a038880aaa7c13b23ccf28fae6"
+x-commit-hash: "154ff24042394d73222935a3cc332a897a9058af"
 x-maintenance-intent: ["(latest)"]
