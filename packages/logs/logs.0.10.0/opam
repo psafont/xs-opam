@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "logs"
-version: "0.8.0"
+version: "0.10.0"
 synopsis: "Logging infrastructure for OCaml"
 description: """\
 Logs provides a logging infrastructure for OCaml. Logging is performed
@@ -25,7 +25,7 @@ Logs and its reporters are distributed under the ISC license.
 [cmdliner]: http://erratique.ch/software/cmdliner
 [lwt]: http://ocsigen.org/lwt/
 
-Home page: http://erratique.ch/software/logs"""
+Home page: <http://erratique.ch/software/logs>"""
 maintainer: "Daniel Bünzli <daniel.buenzl i@erratique.ch>"
 authors: "The logs programmers"
 license: "ISC"
@@ -34,10 +34,10 @@ homepage: "https://erratique.ch/software/logs"
 doc: "https://erratique.ch/software/logs/doc"
 bug-reports: "https://github.com/dbuenzli/logs/issues"
 depends: [
-  "ocaml" {>= "4.08.0"}
+  "ocaml" {>= "4.14.0"}
   "ocamlfind" {build}
   "ocamlbuild" {build}
-  "topkg" {build & >= "1.0.3"}
+  "topkg" {build & >= "1.1.0"}
   "mtime" {with-test}
 ]
 depopts: ["cmdliner" "js_of_ocaml-compiler" "fmt" "lwt" "base-threads"]
@@ -65,8 +65,8 @@ build: [
 ]
 dev-repo: "git+https://erratique.ch/repos/logs.git"
 url {
-  src: "https://erratique.ch/software/logs/releases/logs-0.8.0.tbz"
+  src: "https://erratique.ch/software/logs/releases/logs-0.10.0.tbz"
   checksum:
-    "sha512=c34c67b00d6a989a2660204ea70db8521736d6105f15d1ee0ec6287a662798fe5c4d47075c6e7c84f5d5372adb5af5c4c404f79db70d69140af5e0ebbea3b6a5"
+    "sha512=122b7a77bd07aee1e0cb8e07e82b195a12528cf015e72fa0dd5afaae26ce04bad9b29f32a6d3bd3547fe522b8a036608785e8adb900e31580a0d555719bbb7e7"
 }
 x-maintenance-intent: ["(latest)"]
